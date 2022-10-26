@@ -14,13 +14,15 @@ $color-black-pearl: #041827;
 $color-black-pearl-form: #041427;
 $color-black-pearl-page-shading: #03101b;
 $color-alice-blue: #f2f5f6;
+$color-alice-blue-bg: #f8fdff;
 $color-deep-sky-blue: #00b2ff;
 $color-whisper: #e5e5e5;
 $color-whisper-border: #ebebeb;
+$color-fire-brick: #b22222;
 
 // Gradient
 
-$black-pearl-to-transparent: linear-gradient(180deg, $color-black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
+$black-blue-to-transparent: linear-gradient(180deg, $color-black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
 
 // Typography
 // ---------------------------------
