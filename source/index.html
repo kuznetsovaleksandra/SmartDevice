@@ -2,15 +2,21 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Smart Device - умные технологии">
   <title>Smart-Device</title>
   <link rel="preload" href="./fonts/ptmono-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="js/main.min.js" as="script">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+  <!--svg-->
+  <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -31,7 +37,7 @@
         fill="currentcolor" />
     </symbol>
     <!--  иконка поставщиков-->
-    <symbol viewBox="0 0 35 35" id="#provider">
+    <symbol viewBox="0 0 35 35" id="provider">
       <path
         d="M31.2638 27.8931C31.639 27.3746 31.8609 26.7384 31.8609 26.0511V21.9434C31.8609 21.5658 31.5548 21.2598 31.1773 21.2598H28.1222C26.7099 21.2598 25.5609 22.4087 25.5609 23.8211V26.0511C25.5609 26.738 25.7826 27.3738 26.1573 27.8921C25.69 27.9679 25.2404 28.1176 24.8211 28.3367C23.8713 26.9195 22.3152 25.9421 20.5271 25.7772C20.5201 25.7752 20.513 25.7738 20.506 25.7721C21.1457 25.0577 21.5357 24.1151 21.5357 23.0829V17.5C21.5357 17.1225 21.2296 16.8164 20.8521 16.8164H16.6999C14.9157 16.8164 13.4643 18.2679 13.4643 20.052V23.0828C13.4643 24.1151 13.8543 25.0576 14.494 25.772C14.487 25.7737 14.4799 25.7752 14.4729 25.7772C12.6846 25.942 11.1284 26.9196 10.1787 28.337C9.75926 28.1179 9.30959 27.9681 8.84249 27.8923C9.21724 27.374 9.43906 26.7381 9.43906 26.0511V21.9434C9.43906 21.5658 9.13295 21.2598 8.75547 21.2598H5.70035C4.28805 21.2598 3.13906 22.4087 3.13906 23.8211V26.0511C3.13906 26.7385 3.36103 27.3746 3.73618 27.8931C1.62025 28.2389 0 30.0791 0 32.2913V34.3164C0 34.694 0.306113 35 0.683594 35H34.3164C34.6939 35 35 34.694 35 34.3164V32.2913C35 30.0791 33.3797 28.2389 31.2638 27.8931ZM4.50625 23.8211C4.50625 23.1626 5.04191 22.627 5.70035 22.627H8.07188V23.4595C8.07188 23.8677 7.73979 24.1998 7.33161 24.1998H4.50625V23.8211ZM4.50625 25.567H7.33161C7.59206 25.567 7.84144 25.5192 8.07188 25.4324V26.0511C8.07188 27.0341 7.27214 27.8339 6.28906 27.8339C5.30599 27.8339 4.50625 27.0341 4.50625 26.0511V25.567ZM6.72978 29.2011L6.28906 29.6418L5.84835 29.2011H6.72978ZM9.19789 31.564V33.6328H1.36719V32.2913C1.36719 30.758 2.48985 29.4826 3.95616 29.2424L5.80569 31.0919C5.93394 31.2201 6.10777 31.2921 6.28906 31.2921C6.47035 31.2921 6.64419 31.2201 6.77243 31.0919L8.62251 29.2417C8.94927 29.2949 9.26352 29.4003 9.55637 29.5544C9.32477 30.1809 9.19789 30.8579 9.19789 31.564ZM17.5001 25.7515C16.0286 25.7515 14.8315 24.5543 14.8315 23.0829V22.1794H18.917C19.37 22.1794 19.7965 22.0637 20.1686 21.8604V23.0829C20.1686 24.5543 18.9715 25.7515 17.5001 25.7515ZM18.6916 27.1186L17.5 28.3102L16.3084 27.1186H18.6916ZM14.8314 20.052H14.8315C14.8315 19.0217 15.6696 18.1836 16.6999 18.1836H20.1685V19.5606C20.1685 20.2508 19.607 20.8123 18.9169 20.8123H14.8314V20.052ZM24.4349 33.6328H23.1055H11.8945H10.5651V32.2656H15.0163C15.3938 32.2656 15.6999 31.9596 15.6999 31.582C15.6999 31.2045 15.3938 30.8984 15.0163 30.8984H10.6151C10.9081 28.9556 12.4633 27.422 14.4158 27.1595L17.0166 29.7603C17.1501 29.8938 17.3251 29.9605 17.5 29.9605C17.6749 29.9605 17.8499 29.8938 17.9834 29.7603L20.5842 27.1595C22.755 27.4513 24.4349 29.3145 24.4349 31.564V33.6328ZM26.9281 23.8211C26.9281 23.1626 27.4638 22.627 28.1222 22.627H30.4937V23.4595C30.4937 23.8677 30.1617 24.1998 29.7535 24.1998H26.9281V23.8211ZM26.9281 25.567H29.7535C30.0139 25.567 30.2633 25.5192 30.4937 25.4324V26.0511C30.4937 27.0341 29.694 27.8339 28.7109 27.8339C27.7279 27.8339 26.9281 27.0341 26.9281 26.0511V25.567ZM29.1516 29.2011L28.7109 29.6418L28.2702 29.2011H29.1516ZM25.802 33.6328V31.564C25.802 30.8578 25.6752 30.1809 25.4435 29.5542C25.7362 29.4 26.0504 29.2947 26.3772 29.2416L28.2275 31.0919C28.3557 31.2201 28.5296 31.2921 28.7109 31.2921C28.8922 31.2921 29.066 31.2201 29.1942 31.0919L31.0438 29.2424C32.5101 29.4826 33.6327 30.758 33.6327 32.2913V33.6328H25.802Z"
         fill="currentcolor" />
@@ -49,7 +55,7 @@
         fill="currentcolor" />
     </symbol>
     <!--  иконка конфиденциальности-->
-    <symbol viewBox="0 0 35 35" id="#detective">
+    <symbol viewBox="0 0 35 35" id="detective">
       <path
         d="M17.5 11.0172C17.1227 11.0172 16.8164 11.3751 16.8164 11.8166C16.8164 12.2579 17.1227 12.6161 17.5 12.6161C17.8773 12.6161 18.1836 12.2579 18.1836 11.8166C18.1836 11.3751 17.8773 11.0172 17.5 11.0172Z"
         fill="currentcolor" />
@@ -94,8 +100,8 @@
 
   </svg>
   <div class="wrapper">
-    <header>
-      <div class="container header">
+    <header class="header">
+      <div class="container header__wrapper">
         <a class="header__link-logo">
           <img class="header__logo" src="./img/svg/logo-desk.svg" width="215" height="55" alt="Логотип компании"
             loading="lazy">
@@ -134,16 +140,18 @@
     </header>
     <main>
       <h1 class="visually-hidden">Сайт компании Smart Device</h1>
-      <section class="prime container">
-        <picture>
-          <source srcset="./img/background.webp 1x, ./img/background@2x.webp 2x" type="image/webp">
-          <img class="prime__bg" src="./img/background.jpg" srcset="./img/background@2x.jpg 2x" alt="Материнская плата"
-            width="1920" height="880" loading="lazy">
-        </picture>
-        <h2 class="prime__title">Печатные платы</h2>
-        <p class="prime__text">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей</p>
-        <a class="top-section__btn btn" href="#feedback" data-mobile-text="бесплатная консультация">Получить бесплатную
-          консультацию</a>
+      <section class="prime">
+        <div class="prime__wrapper container">
+          <picture>
+            <source srcset="./img/background.webp 1x, ./img/background@2x.webp 2x" type="image/webp">
+            <img class="prime__bg" src="./img/background.jpg" srcset="./img/background@2x.jpg 2x"
+              alt="Материнская плата" width="1920" height="880" loading="lazy">
+          </picture>
+          <h2 class="prime__title">Печатные платы</h2>
+          <p class="prime__text">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей</p>
+          <a class="prime__btn btn" href="#feedback" data-mobile-text="бесплатная консультация">Получить бесплатную
+            консультацию</a>
+        </div>
       </section>
 
       <section class="advantages container">
@@ -191,16 +199,18 @@
             loading="lazy">
         </picture>
         <div class="about__wrapper">
-          <h2 class="about__title">О&nbsp;компании</h2>
+          <h2>О&nbsp;компании</h2>
           <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые
             технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.<br>
             <br>
             Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
             REFOND.
-            Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных
-            Дорог
-            (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-            светотехники России.
+            <span class="about__hidden-block about__hidden-block--on-mobile">Печатные платы и&nbsp;комплектующие Service
+              Devices применяются на&nbsp;предприятиях Российских Железных
+              Дорог
+              (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+              Производители
+              светотехники России.</span>
           </p>
           <p class="about__hidden-block">Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
             1&nbsp;000&nbsp;000&nbsp;клиентов,
@@ -210,83 +220,212 @@
             Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой
             внутри
             компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
-          <button class="about__btn btn" data-open-text="Свернуть">Подробнее</button>
+          <button class="btn about__btn" type="button" data-open-text="Свернуть">Подробнее</button>
         </div>
       </section>
-      <section class="services container">
-        <h2 class="services__title" data-mobile-text="Товары и услуги Smart Device">Smart Device предлагает следующие
-          товары и&nbsp;услуги</h2>
-        <ul class="services__list">
-          <li class="services__item">
-            <a href="#">
-              <picture>
-                <source srcset="./img/card/manufacture-desk.webp 1x, ./img/card/manufacture-desk@2x.webp 2x" type="image/webp">
-                <img src="./img/card/manufacture-desk.jpg" srcset="./img/card/manufacture-desk@2x.jpg 2x" alt="Производство" width="350" height="650" loading="lazy">
-              </picture>
-              <p>Производство печатных плат</p>
-              <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="services__item">
-            <a href="#">
-              <picture>
-                <source srcset="./img/card/mounting-desk.webp 1x, ./img/card/mounting-desk@2x.webp 2x" type="image/webp">
-                <img src="./img/card/mounting-desk.jpg" srcset="./img/card/mounting-desk@2x.jpg 2x" alt="Монтаж" width="350" height="650" loading="lazy">
-              </picture>
-              <p>Монтаж печатных плат</p>
-              <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="services__item">
-            <a href="#">
-              <picture>
-                <source srcset="./img/card/component-desk.webp 1x, ./img/card/component-desk@2x.webp 2x" type="image/webp">
-                <img src="./img/card/component-desk.jpg" srcset=" ./img/card/component-desk@2x.jpg 2x" alt="" width="350" height="650" loading="lazy">
-              </picture>
-              <p>Комплектующие для светотехники</p>
-              <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="#arrow"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <section class="services">
+        <div class="services__wrapper container">
+          <h2 class="services__title" data-mobile-text="Товары и услуги Smart Device">Smart Device предлагает следующие
+            товары и&nbsp;услуги</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <a href="#">
+                <picture>
+                  <source srcset="./img/background.webp 1x, ./img/background@2x.webp 2x" type="image/webp">
+                  <img src="./img/background.jpg" srcset="./img/background@2x.jpg 2x" alt="Монтаж" width="350"
+                    height="650" loading="lazy">
+                </picture>
+                <p>Производство печатных плат</p>
+                <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="#">
+                <picture>
+                  <source srcset="./img/background.webp 1x, ./img/background@2x.webp 2x" type="image/webp">
+                  <img src="./img/background.jpg" srcset="./img/background@2x.jpg 2x" alt="Монтаж" width="350"
+                    height="650" loading="lazy">
+                </picture>
+                <p>Монтаж печатных плат</p>
+                <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="#">
+                <picture>
+                  <source srcset="./img/background.webp 1x, ./img/background@2x.webp 2x" type="image/webp">
+                  <img src="./img/background.jpg" srcset="./img/background@2x.jpg 2x" alt="Монтаж" width="350"
+                    height="650" loading="lazy">
+                </picture>
+                <p>Комплектующие для светотехники</p>
+                <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="#arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="feedback container" id="feedback">
-        <picture>
-          <source srcset="./img/paper-airplane.webp 1x, ./img/paper-airplane@2x.webp 2x" type="image/webp">
-          <img class="feedback__image-desktop" src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x" alt="Бумажный самолетик" width="510" height="285"
-            loading="lazy">
-        </picture>
-        <div class="feedback__wrapper">
-          <h2 class="feedback__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
-          <p class="feedback__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-            <div class="feedback__field feedback__element">
+      <section class="feedback " id="feedback">
+        <div class="feedback__wrapper container">
+          <picture>
+            <source srcset="./img/paper-airplane.webp 1x, ./img/paper-airplane@2x.webp 2x" type="image/webp">
+            <img class="feedback__image" src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x"
+              alt="Бумажный самолетик" width="510" height="285" loading="lazy">
+          </picture>
+          <div class="feedback__form-wrapper">
+            <h2 class="feedback__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
+            <p class="feedback__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
+            <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+              <div class="feedback__field feedback__element">
+                <label>
+                  <span class="visually-hidden">Имя</span>
+                  <input name="name" type="text" placeholder="Имя" data-pristine-required-message="*Обязательное поле"
+                    required>
+                </label>
+              </div>
+              <div class="feedback__field feedback__element">
+                <label>
+                  <span class="visually-hidden">Телефон</span>
+                  <input name="phone" type="tel" placeholder="Телефон"
+                    data-pristine-required-message="*Обязательное поле"
+                    data-pristine-error-message="*Номер телефона слишком короткий" required>
+                </label>
+              </div>
+              <div class="feedback__field feedback__field--textarea feedback__element">
+                <label>
+                  <span class="visually-hidden">Ваш вопрос</span>
+                  <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                </label>
+              </div>
+              <button class="feedback__btn btn" type="submit">Задать вопрос</button>
+              <div class="feedback__control feedback__element">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="agree"
+                    data-pristine-required-message="*Подтвердите свое согласие" required>
+                  <span></span>
+                  <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__wrapper container">
+          <div class="footer__logo-wrapper">
+            <a class="footer__logo-link">
+              <img class="footer__logo" src="./img/svg/logo-desk.svg" alt="Логотип компании Smart Device" width="215"
+                height="55" loading="lazy">
+            </a>
+            <section class="footer__social social">
+              <h2 class="visually-hidden">Социальные сети</h2>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.1711 17.6428C21.3282 17.6428 22.2282 16.6785 22.2068 15.6285C22.2282 14.5785 21.3496 13.5928 20.1925 13.5928C19.0782 13.5928 18.1568 14.4928 18.1568 15.6071C18.1568 16.7213 19.0568 17.6428 20.1711 17.6428Z"
+                    fill="#F8FDFF" />
+                  <path
+                    d="M20 5C11.7286 5 5 11.7286 5 20C5 28.2929 11.7286 35 20 35C28.2928 35 34.9999 28.2714 34.9999 20C35.0214 11.7286 28.2928 5 20 5ZM20.2143 10.6786C22.9143 10.6786 25.1428 12.9071 25.1214 15.6286C25.1214 18.3714 22.8714 20.5786 20.1285 20.5357C17.4285 20.4929 15.2643 18.2857 15.2643 15.6071C15.2643 12.8857 17.4714 10.6786 20.2143 10.6786ZM25.7214 22.25C25.7214 22.2929 25.7 22.3143 25.7 22.3571C25.6357 22.7857 25.4214 23.1286 25.0571 23.3643C24.8214 23.5143 24.5643 23.6643 24.3071 23.7929C23.6643 24.1143 22.9785 24.3714 22.2714 24.5429C22.1857 24.5643 22.1857 24.5643 22.25 24.6286C22.6357 25.0143 23.0428 25.4214 23.4285 25.8071C23.9214 26.3 24.4357 26.8143 24.9285 27.3071C25.6357 28.0143 25.4428 29.1929 24.5428 29.6214C24.3928 29.7071 24.2214 29.7286 24.05 29.7714C23.9643 29.7714 23.8571 29.7714 23.7714 29.7714C23.75 29.7714 23.7285 29.7714 23.7285 29.75C23.3857 29.7071 23.1071 29.5357 22.85 29.3C21.9928 28.4429 21.1143 27.5643 20.2571 26.7071C20.1928 26.6429 20.1928 26.6429 20.1285 26.7071C19.25 27.5857 18.3928 28.4429 17.5143 29.3214C17.3643 29.4714 17.2143 29.5786 17.0214 29.6643C16.8928 29.7286 16.7428 29.75 16.6143 29.7714C16.5286 29.7714 16.4428 29.7714 16.3357 29.7714C16.2928 29.7714 16.2714 29.75 16.2286 29.75C15.65 29.6429 15.2643 29.3214 15.0928 28.7643C14.9214 28.2071 15.05 27.7143 15.4571 27.3071C15.8214 26.9429 16.1643 26.6 16.5286 26.2357C17.0643 25.7 17.6 25.1643 18.1143 24.65C18.1785 24.5857 18.1785 24.5857 18.0928 24.5643C18.0714 24.5643 18.0285 24.5429 18.0071 24.5429C17.0428 24.3071 16.1643 23.9214 15.3286 23.4071C14.8357 23.0857 14.6 22.6143 14.6643 22.0357C14.7714 20.9643 15.9714 20.3857 16.8714 20.9643C17.0428 21.0714 17.1928 21.1571 17.3857 21.2429C18.3714 21.7357 19.4214 21.95 20.5143 21.8857C21.05 21.8643 21.5857 21.7571 22.1214 21.5857C22.6357 21.4143 23.0857 21.1786 23.5571 20.9214C24.3285 20.4714 25.3357 20.8357 25.6357 21.6714C25.6785 21.8 25.7 21.9071 25.7214 22.0357C25.7214 22.1 25.7214 22.1643 25.7214 22.25Z"
+                    fill="#F8FDFF" />
+                </svg>
+              </a>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы во Вконтакте</span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M26.617 22.4544C25.3818 21.2726 25.2935 21.2726 26.3523 19.9091C27.6758 18.1819 29.4405 16.0002 27.8523 16.0002H24.9406C24.4112 16.0002 24.323 16.3638 24.1465 16.8184C23.4406 18.5455 22.0289 20.8181 21.4995 20.4545C20.9701 20.0909 21.2348 18.7273 21.2348 16.5457C21.323 16.2729 21.2348 16.0002 21.0583 15.8184C20.8819 15.6366 20.6172 15.4548 20.3525 15.4548C19.9113 15.3639 19.4702 15.273 19.029 15.273C17.3526 15.273 16.2056 16.0002 16.8232 16.0911C17.9702 16.2729 17.882 18.8182 17.6173 19.9091C17.1761 21.8181 15.4115 18.4546 14.6174 16.7275C14.5291 16.2729 14.1762 16.0002 13.735 16.0002H11.441C11.0881 16.0002 10.8234 16.0911 10.8234 16.3638C10.8234 16.8184 13.0292 21.2726 15.0585 23.5452C17.0879 25.7269 19.1172 25.5451 20.529 25.5451C20.7054 25.5451 20.8819 25.4542 20.9701 25.3633C21.0583 25.2724 21.1466 25.0906 21.1466 24.9088C21.1466 23.4543 21.676 22.7271 22.6465 23.727C23.7053 24.8179 23.97 25.5451 25.2935 25.5451H27.6758C28.2934 25.5451 28.4699 25.3633 28.4699 25.0906C28.5581 24.4543 27.4993 23.2725 26.617 22.4544ZM20.3525 5.00091C28.5581 5.18272 35.0873 12.0005 34.9991 20.2727C34.9109 28.5449 28.117 35.09 19.9113 34.9991C11.6175 34.9082 5 28.2722 5 20C5.08823 11.6369 11.9704 4.91001 20.3525 5.00091Z"
+                    fill="#F8FDFF" />
+                </svg>
+              </a>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в Pinterest</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.9999 0C23.2847 0 30 6.71625 30 15.0001C30 23.2848 23.2847 30 14.9999 30C6.71522 30 0 23.2847 0 15.0001C0 6.71625 6.71532 0 14.9999 0Z"
+                    fill="#F8FDFF" />
+                  <path
+                    d="M15 5C9.4823 5 5 9.4823 5 15C5 20.5177 9.4823 25 15 25C20.5177 25 25 20.5177 25 15C25 9.4823 20.5177 5 15 5ZM15 5.86957C20.0477 5.86957 24.1304 9.95225 24.1304 15C24.1304 20.0477 20.0477 24.1304 15 24.1304C14.0767 24.1304 13.186 23.9922 12.3463 23.7381C12.7203 23.1128 13.2032 22.219 13.395 21.481C13.509 21.0434 13.9776 19.2587 13.9776 19.2587C14.2821 19.84 15.1719 20.332 16.1192 20.332C18.9383 20.332 20.9706 17.7394 20.9706 14.5177C20.9706 11.4289 18.4502 9.11855 15.2072 9.11855C11.1725 9.11855 9.03108 11.8264 9.03108 14.775C9.03108 16.1462 9.7604 17.8531 10.9282 18.3967C11.105 18.4791 11.2 18.4434 11.2407 18.2719C11.2719 18.1418 11.4297 17.5073 11.5005 17.2121C11.5232 17.1179 11.5122 17.0365 11.436 16.9438C11.0495 16.475 10.7396 15.6138 10.7396 14.8106C10.7396 12.7487 12.3006 10.7532 14.9601 10.7532C17.2564 10.7532 18.8646 12.3186 18.8646 14.5567C18.8646 17.0853 17.5879 18.8375 15.9265 18.8375C15.0089 18.8375 14.3219 18.0784 14.5423 17.1476C14.8065 16.0366 15.3167 14.8378 15.3167 14.0353C15.3167 13.3177 14.9316 12.7191 14.1338 12.7191C13.1958 12.7191 12.4423 13.6889 12.4423 14.989C12.4423 15.8162 12.7225 16.3765 12.7225 16.3765C12.7225 16.3765 11.7959 20.2941 11.6262 21.0233C11.4561 21.7519 11.5017 22.7332 11.5718 23.4638C8.22658 22.1098 5.86957 18.8345 5.86957 15C5.86957 9.95225 9.95225 5.86957 15 5.86957Z"
+                    fill="#041827" />
+                </svg>
+              </a>
+            </section>
+          </div>
+          <nav class="footer__navigation navigation chapter">
+            <h2 class="navigation__title chapter__title">Разделы сайта</h2>
+            <ul class="navigation__list chapter__content chapter__content--active">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">О&nbsp;Компании</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Продукты</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Производство печатных плат</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Монтаж печатных плат</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Комплектующие</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Доставка</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contacts contacts chapter">
+            <h2 class="contacts__title chapter__title">Наш офис</h2>
+            <div class="contacts__wrapper chapter__content chapter__content--active">
+              <address class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
+              <a class="contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a class="contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
+              <a class="contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <h2 class="modal__title">Закажите звонок</h2>
+          <p class="modal__text">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <div class="modal__field modal__element">
               <label>
                 <span class="visually-hidden">Имя</span>
                 <input name="name" type="text" placeholder="Имя" data-pristine-required-message="*Обязательное поле"
                   required>
               </label>
             </div>
-            <div class="feedback__field feedback__element">
+            <div class="modal__field modal__element">
               <label>
                 <span class="visually-hidden">Телефон</span>
                 <input name="phone" type="tel" placeholder="Телефон" data-pristine-required-message="*Обязательное поле"
                   data-pristine-error-message="*Номер телефона слишком короткий" required>
               </label>
             </div>
-            <div class="feedback__field feedback__field--textarea feedback__element">
+            <div class="modal__field modal__field--textarea modal__element">
               <label>
                 <span class="visually-hidden">Ваш вопрос</span>
                 <textarea name="question" placeholder="Ваш вопрос"></textarea>
               </label>
             </div>
-            <button class="btn feedback__btn" type="submit">Задать вопрос</button>
-            <div class="feedback__control feedback__element">
+            <button class="modal__btn btn" type="submit">Отправить</button>
+            <div class="modal__control modal__element">
               <label>
                 <input class="visually-hidden" type="checkbox" name="agree"
                   data-pristine-required-message="*Подтвердите свое согласие" required>
@@ -295,107 +434,15 @@
               </label>
             </div>
           </form>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer container">
-        <div class="footer__logo-wrapper">
-          <a class="footer__logo-link">
-            <img class="footer__logo" src="./img/svg/logo-desk.svg" alt="Логотип компании Smart Device" width="215"
-              height="55" loading="lazy">
-          </a>
-          <div class="footer__social social">
-            <h2 class="visually-hidden">Социальные сети</h2>
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Мы в Одноклассниках</span>
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.1711 17.6428C21.3282 17.6428 22.2282 16.6785 22.2068 15.6285C22.2282 14.5785 21.3496 13.5928 20.1925 13.5928C19.0782 13.5928 18.1568 14.4928 18.1568 15.6071C18.1568 16.7213 19.0568 17.6428 20.1711 17.6428Z" fill="#F8FDFF"/>
-                <path d="M20 5C11.7286 5 5 11.7286 5 20C5 28.2929 11.7286 35 20 35C28.2928 35 34.9999 28.2714 34.9999 20C35.0214 11.7286 28.2928 5 20 5ZM20.2143 10.6786C22.9143 10.6786 25.1428 12.9071 25.1214 15.6286C25.1214 18.3714 22.8714 20.5786 20.1285 20.5357C17.4285 20.4929 15.2643 18.2857 15.2643 15.6071C15.2643 12.8857 17.4714 10.6786 20.2143 10.6786ZM25.7214 22.25C25.7214 22.2929 25.7 22.3143 25.7 22.3571C25.6357 22.7857 25.4214 23.1286 25.0571 23.3643C24.8214 23.5143 24.5643 23.6643 24.3071 23.7929C23.6643 24.1143 22.9785 24.3714 22.2714 24.5429C22.1857 24.5643 22.1857 24.5643 22.25 24.6286C22.6357 25.0143 23.0428 25.4214 23.4285 25.8071C23.9214 26.3 24.4357 26.8143 24.9285 27.3071C25.6357 28.0143 25.4428 29.1929 24.5428 29.6214C24.3928 29.7071 24.2214 29.7286 24.05 29.7714C23.9643 29.7714 23.8571 29.7714 23.7714 29.7714C23.75 29.7714 23.7285 29.7714 23.7285 29.75C23.3857 29.7071 23.1071 29.5357 22.85 29.3C21.9928 28.4429 21.1143 27.5643 20.2571 26.7071C20.1928 26.6429 20.1928 26.6429 20.1285 26.7071C19.25 27.5857 18.3928 28.4429 17.5143 29.3214C17.3643 29.4714 17.2143 29.5786 17.0214 29.6643C16.8928 29.7286 16.7428 29.75 16.6143 29.7714C16.5286 29.7714 16.4428 29.7714 16.3357 29.7714C16.2928 29.7714 16.2714 29.75 16.2286 29.75C15.65 29.6429 15.2643 29.3214 15.0928 28.7643C14.9214 28.2071 15.05 27.7143 15.4571 27.3071C15.8214 26.9429 16.1643 26.6 16.5286 26.2357C17.0643 25.7 17.6 25.1643 18.1143 24.65C18.1785 24.5857 18.1785 24.5857 18.0928 24.5643C18.0714 24.5643 18.0285 24.5429 18.0071 24.5429C17.0428 24.3071 16.1643 23.9214 15.3286 23.4071C14.8357 23.0857 14.6 22.6143 14.6643 22.0357C14.7714 20.9643 15.9714 20.3857 16.8714 20.9643C17.0428 21.0714 17.1928 21.1571 17.3857 21.2429C18.3714 21.7357 19.4214 21.95 20.5143 21.8857C21.05 21.8643 21.5857 21.7571 22.1214 21.5857C22.6357 21.4143 23.0857 21.1786 23.5571 20.9214C24.3285 20.4714 25.3357 20.8357 25.6357 21.6714C25.6785 21.8 25.7 21.9071 25.7214 22.0357C25.7214 22.1 25.7214 22.1643 25.7214 22.25Z" fill="#F8FDFF"/>
-                </svg>
-            </a>
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Мы во Вконтакте</span>
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.617 22.4544C25.3818 21.2726 25.2935 21.2726 26.3523 19.9091C27.6758 18.1819 29.4405 16.0002 27.8523 16.0002H24.9406C24.4112 16.0002 24.323 16.3638 24.1465 16.8184C23.4406 18.5455 22.0289 20.8181 21.4995 20.4545C20.9701 20.0909 21.2348 18.7273 21.2348 16.5457C21.323 16.2729 21.2348 16.0002 21.0583 15.8184C20.8819 15.6366 20.6172 15.4548 20.3525 15.4548C19.9113 15.3639 19.4702 15.273 19.029 15.273C17.3526 15.273 16.2056 16.0002 16.8232 16.0911C17.9702 16.2729 17.882 18.8182 17.6173 19.9091C17.1761 21.8181 15.4115 18.4546 14.6174 16.7275C14.5291 16.2729 14.1762 16.0002 13.735 16.0002H11.441C11.0881 16.0002 10.8234 16.0911 10.8234 16.3638C10.8234 16.8184 13.0292 21.2726 15.0585 23.5452C17.0879 25.7269 19.1172 25.5451 20.529 25.5451C20.7054 25.5451 20.8819 25.4542 20.9701 25.3633C21.0583 25.2724 21.1466 25.0906 21.1466 24.9088C21.1466 23.4543 21.676 22.7271 22.6465 23.727C23.7053 24.8179 23.97 25.5451 25.2935 25.5451H27.6758C28.2934 25.5451 28.4699 25.3633 28.4699 25.0906C28.5581 24.4543 27.4993 23.2725 26.617 22.4544ZM20.3525 5.00091C28.5581 5.18272 35.0873 12.0005 34.9991 20.2727C34.9109 28.5449 28.117 35.09 19.9113 34.9991C11.6175 34.9082 5 28.2722 5 20C5.08823 11.6369 11.9704 4.91001 20.3525 5.00091Z" fill="#F8FDFF"/>
-                </svg>
-            </a>
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Мы в Pinterest</span>
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.9999 0C23.2847 0 30 6.71625 30 15.0001C30 23.2848 23.2847 30 14.9999 30C6.71522 30 0 23.2847 0 15.0001C0 6.71625 6.71532 0 14.9999 0Z" fill="#F8FDFF"/>
-                <path d="M15 5C9.4823 5 5 9.4823 5 15C5 20.5177 9.4823 25 15 25C20.5177 25 25 20.5177 25 15C25 9.4823 20.5177 5 15 5ZM15 5.86957C20.0477 5.86957 24.1304 9.95225 24.1304 15C24.1304 20.0477 20.0477 24.1304 15 24.1304C14.0767 24.1304 13.186 23.9922 12.3463 23.7381C12.7203 23.1128 13.2032 22.219 13.395 21.481C13.509 21.0434 13.9776 19.2587 13.9776 19.2587C14.2821 19.84 15.1719 20.332 16.1192 20.332C18.9383 20.332 20.9706 17.7394 20.9706 14.5177C20.9706 11.4289 18.4502 9.11855 15.2072 9.11855C11.1725 9.11855 9.03108 11.8264 9.03108 14.775C9.03108 16.1462 9.7604 17.8531 10.9282 18.3967C11.105 18.4791 11.2 18.4434 11.2407 18.2719C11.2719 18.1418 11.4297 17.5073 11.5005 17.2121C11.5232 17.1179 11.5122 17.0365 11.436 16.9438C11.0495 16.475 10.7396 15.6138 10.7396 14.8106C10.7396 12.7487 12.3006 10.7532 14.9601 10.7532C17.2564 10.7532 18.8646 12.3186 18.8646 14.5567C18.8646 17.0853 17.5879 18.8375 15.9265 18.8375C15.0089 18.8375 14.3219 18.0784 14.5423 17.1476C14.8065 16.0366 15.3167 14.8378 15.3167 14.0353C15.3167 13.3177 14.9316 12.7191 14.1338 12.7191C13.1958 12.7191 12.4423 13.6889 12.4423 14.989C12.4423 15.8162 12.7225 16.3765 12.7225 16.3765C12.7225 16.3765 11.7959 20.2941 11.6262 21.0233C11.4561 21.7519 11.5017 22.7332 11.5718 23.4638C8.22658 22.1098 5.86957 18.8345 5.86957 15C5.86957 9.95225 9.95225 5.86957 15 5.86957Z" fill="#041827"/>
-                </svg>
-            </a>
-          </div>
-        </div>
-        <nav class="footer__nav nav accordion">
-          <h2 class="nav__title accordion__title">Разделы сайта</h2>
-          <ul class="nav__list accordion__content accordion__content--active">
-            <li class="nav__item">
-              <a class="nav__link" href="#">О&nbsp;Компании</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Продукты</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Производство печатных плат</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Монтаж печатных плат</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Комплектующие</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Доставка</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__contacts contacts accordion">
-          <h2 class="contacts__title accordion__title">Наш офис</h2>
-          <div class="contacts__wrapper accordion__content accordion__content--active">
-            <address class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
-            <a class="contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            <a class="contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
-            <a class="contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Модалки
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
+            <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
         </div>
       </div>
     </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
+  </div>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

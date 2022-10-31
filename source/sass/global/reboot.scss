@@ -16,8 +16,8 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-ptmono;
+  color: $color-black-pearl;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,13 +25,18 @@ html {
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 body {
   width: 100%;
   height: 100%;
 
-  background-color: $color-default-white;
+  background-color: $color-alice-blue-bg;
 }
 
 a {

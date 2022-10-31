@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  padding: 5px;
+  margin-right: 15px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include vp-1023 {
+    margin: 0 0 0 15px;
+  }
+
+  @include vp-767 {
+    margin: 0 7px;
+  }
+}

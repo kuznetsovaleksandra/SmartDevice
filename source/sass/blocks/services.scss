@@ -1,0 +1,188 @@
+.services {
+  background-color: $color-black-pearl;
+}
+
+.services__wrapper {
+  padding-top: 70px;
+  padding-bottom: 140px;
+
+  @include vp-1439 {
+    padding-top: 70px;
+    padding-bottom: 140px;
+  }
+
+  @include vp-1023 {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 86px;
+  }
+}
+
+.services__title {
+  margin: 0 0 50px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 26px;
+    padding-right: 10px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.services__item {
+  position: relative;
+  min-height: 650px;
+  z-index: 1;
+
+  @include vp-1023 {
+    min-height: 250px;
+  }
+
+  &:nth-child(3n+1) {
+    img {
+      bottom: -51px;
+      left: -189px;
+
+      @include vp-1023 {
+        bottom: -18px;
+        left: -244px;
+      }
+
+      @include vp-767 {
+        bottom: -268px;
+        left: -375px;
+      }
+    }
+  }
+
+  &:nth-child(3n+3) {
+    img {
+      top: auto;
+      bottom: -57px;
+      left: auto;
+      right: -249px;
+
+      @include vp-1023 {
+        right: auto;
+        left: -148px;
+        bottom: -208px;
+      }
+
+      @include vp-767 {
+        left: auto;
+        right: -339px;
+        bottom: -173px;
+      }
+    }
+  }
+
+  a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      bottom: 0;
+      right: 0;
+      background-color: $color-deep-sky-blue;
+      border-radius: 3px 0 0 0;
+
+      @include vp-767 {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 1494px;
+    height: 818px;
+    max-width: none;
+    bottom: -46px;
+    left: -534px;
+    object-fit: cover;
+    background-color: $color-deep-sky-blue;
+    z-index: -1;
+
+    @include vp-1023 {
+      left: auto;
+      bottom: -253px;
+      right: -195px;
+    }
+
+    @include vp-767 {
+      bottom: -30px;
+      right: auto;
+      left: -365px;
+    }
+  }
+
+  p {
+    margin: 50px 0;
+    padding: 0 40px;
+    font-family: $ff-roboto-condensed;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-default-white;
+
+    @include vp-1023 {
+      margin: 36px 0;
+      padding-left: 45px;
+      padding-right: 460px;
+    }
+
+    @include vp-767 {
+      margin: 26px 0;
+      padding: 0 90px 0 30px;
+      font-size: 18px;
+    }
+  }
+
+  svg {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    right: 26px;
+    bottom: 26px;
+
+    @include vp-767 {
+      right: 16px;
+      bottom: 16px;
+    }
+  }
+}

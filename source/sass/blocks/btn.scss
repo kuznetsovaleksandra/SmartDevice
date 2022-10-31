@@ -1,19 +1,18 @@
 .btn {
   display: inline-flex;
-  padding: 10px 15px;
+  padding-top: 10px;;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   justify-content: center;
-  color: $color-default-white;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   background-color: $color-transparent;
-  border: 1px solid $color-default-white;
   border-radius: 3px;
   cursor: pointer;
   transition: opacity $trans-default;
+  vertical-align: middle;
 
   &:disabled {
     opacity: 0.5;
@@ -25,3 +24,4 @@
     opacity: 0.8;
   }
 }
+

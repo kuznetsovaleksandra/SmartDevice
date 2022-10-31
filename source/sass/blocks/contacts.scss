@@ -1,0 +1,40 @@
+.contacts__title {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 22px 0;
+
+  @include vp-767 {
+    margin: 0;
+    padding: 20px 40px 18px 0;
+  }
+}
+
+.contacts__wrapper {
+  @include vp-767 {
+    padding-bottom: 10px;
+  }
+}
+
+.contacts__address {
+  margin-bottom: 10px;
+  font-style: normal;
+  color: transparentize($color-default-white, 0.3);
+
+  @include vp-767 {
+    margin-bottom: 21px;
+  }
+}
+
+.contacts__phone {
+  display: block;
+  margin-bottom: 10px;
+  color: transparentize($color-default-white, 0.3);
+
+  &:hover {
+    color: $color-default-white;
+  }
+}

@@ -1,6 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
+import {chaptersStart} from './modules/chapter.js';
+import {changeTextOnMobile} from './modules/change-text-on-mobile.js';
+import {aboutClose} from './modules/about-close.js';
+import {scrollToForm} from './modules/scroll-to-form.js';
+import {forms} from './modules/forms.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -9,6 +13,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  chaptersStart();
+  changeTextOnMobile();
+  aboutClose();
+  forms();
+  scrollToForm();
 
   // Modules
   // ---------------------------------

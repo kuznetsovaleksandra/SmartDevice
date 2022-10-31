@@ -1,0 +1,119 @@
+.footer {
+  background-color: $color-black-pearl;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+  }
+}
+
+.footer__logo-wrapper {
+  padding: 50px 20px 40px 0;
+  margin-right: auto;
+  width: 25vw;
+  min-width: 235px;
+
+  @include vp-1023 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 50px 0 35px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    flex-direction: column;
+    padding: 35px 0 14px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 50px);
+      height: 1px;
+      background-color: rgba(248, 253, 255, 0.7);
+      bottom: 0;
+      left: -25px;
+    }
+  }
+}
+
+.footer__social {
+  margin: 30px 10px 0;
+
+  @include vp-1023 {
+    margin: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 20px;
+  }
+}
+
+.footer__navigation {
+  width: 45vw;
+  padding: 57px 0 40px 70px;
+
+  @include vp-1023 {
+    width: auto;
+    padding: 0 20px 65px 0;
+  }
+
+  @include vp-767 {
+    position: relative;
+    padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 50px);
+      height: 1px;
+      background-color: rgba(248, 253, 255, 0.7);
+      bottom: 0;
+      left: -25px;
+    }
+  }
+}
+
+.footer__contacts {
+  margin-left: auto;
+  width: 30vw;
+  max-width: 345px;
+  padding: 57px 0 37px;
+
+  @include vp-1023 {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0 0 65px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 50px);
+      height: 1px;
+      background-color: rgba(248, 253, 255, 0.7);
+      bottom: 0;
+      left: -25px;
+    }
+  }
+}
