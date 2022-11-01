@@ -61,6 +61,10 @@
   min-height: 650px;
   z-index: 1;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
   @include vp-1023 {
     min-height: 250px;
   }

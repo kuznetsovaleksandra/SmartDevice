@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "animated-scroll-to": "^2.3.0",
+    "eslint-config-htmlacademy": "^8.0.0",
     "inputmask": "^5.0.7",
     "pristinejs": "^0.1.9"
   }
