@@ -6,6 +6,10 @@
   z-index: 10;
   background: $color-black-pearl;
 
+  @include vp-1023 {
+    position: relative;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -47,17 +51,19 @@
 }
 
 .header__contacts-list {
-  width: 100%;
+  min-width: 475px;
+  // width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 1;
-  // justify-content: space-around;
-  column-gap: 112px;
+  justify-content: space-between;
+  // column-gap: 112px;
   margin: 0;
   padding: 39px 5px 49px 0;
   list-style: none;
 
   @include vp-1023 {
+    min-width: auto;
     justify-content: flex-end;
     padding: 20px 34px 40px 0;
   }
@@ -76,6 +82,10 @@
     &:not(:first-child) {
       margin-left: 20px;
     }
+  }
+  
+  &:hover {
+    opacity: 0.8;
   }
 }
 

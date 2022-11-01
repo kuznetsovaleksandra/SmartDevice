@@ -1,6 +1,6 @@
-import { ScrollLock } from '../../utils/scroll-lock';
-import { FocusLock } from '../../utils/focus-lock';
-import { focusOnFirstModal } from './focus-on-first-modal.js';
+import {ScrollLock} from '../../utils/scroll-lock';
+import {FocusLock} from '../../utils/focus-lock';
+import {focusOnFirstModal} from './focus-on-first-modal.js';
 
 export class Modals {
   constructor(settings = {}) {

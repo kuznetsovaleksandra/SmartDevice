@@ -109,14 +109,4 @@
     color: $color-default-white;
     background-color: $color-black-pearl-form;
   }
-
-  [data-open-text].is-open {
-    @include vp-767 {
-      max-height: 378px;
-    }
-  }
-
-  [data-open-text].is-open {
-    display: block;
-  }
 }
