@@ -1,6 +1,10 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+
+  @include vp-1023 {
+    margin-right: -5px;
+  }
 }
 
 .social__link {

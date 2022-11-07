@@ -405,7 +405,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 *,
@@ -1892,6 +1892,10 @@ button,
     margin: 36px 0;
     padding-left: 45px;
     padding-right: 460px;
+  }
+
+  .social {
+    margin-right: -5px;
   }
 
   .social__link {
