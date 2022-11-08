@@ -274,14 +274,14 @@
             <p class="feedback__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
             <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
               <div class="feedback__field feedback__element">
-                <label tabindex="1">
+                <label>
                   <span class="visually-hidden">Имя</span>
                   <input name="name" type="text" placeholder="Имя" data-pristine-required-message="*Обязательное поле"
                     required>
                 </label>
               </div>
               <div class="feedback__field feedback__element">
-                <label tabindex="2">
+                <label>
                   <span class="visually-hidden">Телефон</span>
                   <input name="phone" type="tel" placeholder="Телефон"
                     data-pristine-required-message="*Обязательное поле"
@@ -289,14 +289,14 @@
                 </label>
               </div>
               <div class="feedback__field feedback__field--textarea feedback__element">
-                <label tabindex="3">
+                <label>
                   <span class="visually-hidden">Ваш вопрос</span>
                   <textarea name="question" placeholder="Ваш вопрос"></textarea>
                 </label>
               </div>
-              <button class="feedback__btn btn" type="submit" tabindex="5">Задать вопрос</button>
+              <button class="feedback__btn btn" type="submit">Задать вопрос</button>
               <div class="feedback__control feedback__element">
-                <label tabindex="4">
+                <label>
                   <input class="visually-hidden" type="checkbox" name="agree"
                     data-pristine-required-message="*Подтвердите свое согласие" required>
                   <span></span>
@@ -404,7 +404,7 @@
                 <textarea name="question" placeholder="Ваш вопрос"></textarea>
               </label>
             </div>
-            <button class="modal__btn btn" type="submit" tabindex="5">Отправить</button>
+            <button tabindex="5" class="modal__btn btn" type="submit">Отправить</button>
             <div class="modal__control modal__element">
               <label tabindex="4">
                 <input class="visually-hidden" type="checkbox" name="agree"
