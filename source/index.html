@@ -294,7 +294,6 @@
                   <textarea name="question" placeholder="Ваш вопрос"></textarea>
                 </label>
               </div>
-              <button class="feedback__btn btn" type="submit">Задать вопрос</button>
               <div class="feedback__control feedback__element">
                 <label>
                   <input class="visually-hidden" type="checkbox" name="agree"
@@ -303,6 +302,7 @@
                   <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                 </label>
               </div>
+              <button class="feedback__btn btn" type="submit">Задать вопрос</button>
             </form>
           </div>
         </div>
@@ -385,36 +385,36 @@
           <p class="modal__text">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
           <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
             <div class="modal__field modal__element">
-              <label tabindex="1">
+              <label>
                 <span class="visually-hidden">Имя</span>
                 <input name="name" type="text" placeholder="Имя" data-pristine-required-message="*Обязательное поле"
                   required>
               </label>
             </div>
             <div class="modal__field modal__element">
-              <label tabindex="2">
+              <label>
                 <span class="visually-hidden">Телефон</span>
                 <input name="phone" type="tel" placeholder="Телефон" data-pristine-required-message="*Обязательное поле"
                   data-pristine-error-message="*Номер телефона слишком короткий" required>
               </label>
             </div>
             <div class="modal__field modal__field--textarea modal__element">
-              <label tabindex="3">
+              <label>
                 <span class="visually-hidden">Ваш вопрос</span>
                 <textarea name="question" placeholder="Ваш вопрос"></textarea>
               </label>
             </div>
-            <button tabindex="5" class="modal__btn btn" type="submit">Отправить</button>
             <div class="modal__control modal__element">
-              <label tabindex="4">
+              <label>
                 <input class="visually-hidden" type="checkbox" name="agree"
-                  data-pristine-required-message="*Подтвердите свое согласие" required>
+                data-pristine-required-message="*Подтвердите свое согласие" required>
                 <span></span>
                 <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
               </label>
             </div>
+            <button class="modal__btn btn" type="submit">Отправить</button>
           </form>
-          <button tabindex="6" class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>

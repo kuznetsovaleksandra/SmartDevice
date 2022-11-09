@@ -929,6 +929,9 @@ button,
 .feedback__control {
   position: relative;
   margin-top: 15px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .feedback__control:focus-within label {
@@ -1353,6 +1356,9 @@ button,
 
 .modal__control {
   position: relative;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .modal__control:focus-within label {

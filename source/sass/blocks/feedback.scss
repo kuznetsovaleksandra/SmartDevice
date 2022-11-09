@@ -183,6 +183,7 @@
 .feedback__control {
   position: relative;
   margin-top: 15px;
+  order: 1;
 
   @include vp-1023 {
     margin-top: 8px;
