@@ -32,101 +32,112 @@
 
 .prime__bg {
   position: absolute;
-  width: 100vw;
-  min-width: 320px;
+  // width: 100vw;
+  // min-width: 320px;
   height: 100%;
   // min-height: 880px;
   left: 0;
   // top: -95px;
   top: 0;
-  object-fit: cover;
-  object-position: bottom;
-  // overflow: hidden;
+  // object-fit: cover;
+  // object-position: bottom;
+  overflow: hidden;
   z-index: -1;
 
-  @include vp-1023 {
-    min-width: 1396px;
-    left: -124px;
+  img {
+    width: 1920px;
+    height: 880px;
+    min-width: 320px;
     object-fit: cover;
-    object-position: bottom;
-  }
+    object-position: center -100px;
 
-  @include vp-767 {
-    min-width: 1220px;
-    left: -229px;
-    top: 0;
-  }
-}
+    @include vp-1023 {
+      width: 1396px;
+      height: 640px;
+      left: -124px;
+      object-fit: cover;
+      object-position: -125px -80px;
+    }
 
-.prime__title {
-  margin: 0 0 36px;
-  padding-left: 125px;
-  // padding-top: 185px;
-  font-family: $ff-roboto-condensed;
-  font-weight: 700;
-  font-size: 80px;
-  // font-size: 67px;
-  line-height: 90px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: $color-alice-blue;
-
-  @include vp-1023 {
-    padding: 0;
-    margin-bottom: 6px;
-    font-size: 64px;
-    line-height: 60px;
-  }
-
-  @include vp-767 {
-    font-size: 36px;
-    line-height: 43px;
-    margin-bottom: 8px;
-  }
-}
-
-.prime__text {
-  margin: 0 0 44px;
-  padding-left: 125px;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 35px;
-  color: $color-alice-blue;
-
-  @include vp-1023 {
-    padding: 0;
-    margin-bottom: 55px;
-  }
-
-  @include vp-767 {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 46px;
-
-    br {
-      display: none;
+    @include vp-767 {
+      width: 1220px;
+      height: 560px;
+      left: -229px;
+      top: 0;
+      object-position: -229px -50px;
     }
   }
 }
 
-.prime__btn {
-  margin-left: 125px;
-  padding: 15px 27px;
-  font-size: 18px;
-  line-height: 25px;
-  color: $color-alice-blue;
-  background-color: $color-deep-sky-blue;
-  border: none;
+  .prime__title {
+    margin: 0 0 36px;
+    padding-left: 125px;
+    // padding-top: 185px;
+    font-family: $ff-roboto-condensed;
+    font-weight: 700;
+    font-size: 80px;
+    // font-size: 67px;
+    line-height: 90px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $color-alice-blue;
 
-  @include vp-1023 {
-    margin-left: 45px;
+    @include vp-1023 {
+      padding: 0;
+      margin-bottom: 6px;
+      font-size: 64px;
+      line-height: 60px;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 8px;
+    }
   }
 
-  @include vp-767 {
-    margin: 0;
-    width: 100%;
-    padding: 10px 30px;
-    font-size: 14px;
-    line-height: 20px;
+  .prime__text {
+    margin: 0 0 44px;
+    padding-left: 125px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: $color-alice-blue;
+
+    @include vp-1023 {
+      padding: 0;
+      margin-bottom: 55px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 46px;
+
+      br {
+        display: none;
+      }
+    }
   }
-}
+
+  .prime__btn {
+    margin-left: 125px;
+    padding: 15px 27px;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-alice-blue;
+    background-color: $color-deep-sky-blue;
+    border: none;
+
+    @include vp-1023 {
+      margin-left: 45px;
+    }
+
+    @include vp-767 {
+      margin: 0;
+      width: 100%;
+      padding: 10px 30px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }

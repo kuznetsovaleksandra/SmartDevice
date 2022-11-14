@@ -71,8 +71,8 @@
 
   &:nth-child(3n+1) {
     img {
-      bottom: -51px;
-      left: -189px;
+      bottom: -48px;
+      left: -185px;
 
       @include vp-1023 {
         bottom: -18px;
@@ -89,9 +89,9 @@
   &:nth-child(3n+3) {
     img {
       top: auto;
-      bottom: -57px;
+      bottom: -60px;
       left: auto;
-      right: -249px;
+      right: -254px;
 
       @include vp-1023 {
         right: auto;
@@ -139,7 +139,7 @@
     max-width: none;
     bottom: -46px;
     left: -534px;
-    object-fit: cover;
+    // object-fit: cover;
     background-color: $color-deep-sky-blue;
     z-index: -1;
 
@@ -164,7 +164,6 @@
     font-size: 20px;
     line-height: 30px;
     color: $color-default-white;
-    width: 230px;
 
     @include vp-1023 {
       margin: 36px 0;
@@ -195,18 +194,18 @@
 
 .services__text-one {
   display: none;
-  
+
     @include vp-1023 {
-      display: none;
+      display: inline;
     }
 
-    @include vp-767 {
-      display: none;
-    }
+    // @include vp-767 {
+    //   display: none;
+    // }
 }
 
 .services__text-two {
-  display: none;
+  display: inline;
 
   @include vp-1023 {
     display: none;

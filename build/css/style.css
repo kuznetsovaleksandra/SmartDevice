@@ -1492,16 +1492,21 @@ button,
 
 .prime__bg {
   position: absolute;
-  width: 100vw;
-  min-width: 320px;
   height: 100%;
   left: 0;
   top: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.prime__bg img {
+  width: 1920px;
+  height: 880px;
+  min-width: 320px;
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: bottom;
-  object-position: bottom;
-  z-index: -1;
+  -o-object-position: center -100px;
+  object-position: center -100px;
 }
 
 .prime__title {
@@ -1575,15 +1580,15 @@ button,
 }
 
 .services__item:nth-child(3n+1) img {
-  bottom: -51px;
-  left: -189px;
+  bottom: -48px;
+  left: -185px;
 }
 
 .services__item:nth-child(3n+3) img {
   top: auto;
-  bottom: -57px;
+  bottom: -60px;
   left: auto;
-  right: -249px;
+  right: -254px;
 }
 
 .services__item a {
@@ -1613,8 +1618,6 @@ button,
   max-width: none;
   bottom: -46px;
   left: -534px;
-  -o-object-fit: cover;
-  object-fit: cover;
   background-color: #00b2ff;
   z-index: -1;
 }
@@ -1627,7 +1630,6 @@ button,
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  width: 230px;
 }
 
 .services__item svg {
@@ -1643,7 +1645,7 @@ button,
 }
 
 .services__text-two {
-  display: none;
+  display: inline;
 }
 
 .social {
@@ -1867,13 +1869,14 @@ button,
     padding-bottom: 206px;
   }
 
-  .prime__bg {
-    min-width: 1396px;
+  .prime__bg img {
+    width: 1396px;
+    height: 640px;
     left: -124px;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: bottom;
-    object-position: bottom;
+    -o-object-position: -125px -80px;
+    object-position: -125px -80px;
   }
 
   .prime__title {
@@ -1935,7 +1938,7 @@ button,
   }
 
   .services__text-one {
-    display: none;
+    display: inline;
   }
 
   .services__text-two {
@@ -2208,10 +2211,13 @@ button,
     padding-bottom: 190px;
   }
 
-  .prime__bg {
-    min-width: 1220px;
+  .prime__bg img {
+    width: 1220px;
+    height: 560px;
     left: -229px;
     top: 0;
+    -o-object-position: -229px -50px;
+    object-position: -229px -50px;
   }
 
   .prime__title {
@@ -2281,10 +2287,6 @@ button,
   .services__item svg {
     right: 16px;
     bottom: 16px;
-  }
-
-  .services__text-one {
-    display: none;
   }
 
   .services__text-two {
