@@ -20,16 +20,17 @@
 
 .feedback__wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  // grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 590px;
   gap: 36px;
   align-items: center;
   padding-top: 170px;
   padding-bottom: 250px;
 
-  @include vp-1439 {
-    padding-top: 85px;
-    padding-bottom: 125px;
-  }
+  // @include vp-1439 {
+  //   padding-top: 85px;
+  //   padding-bottom: 125px;
+  // }
 
   @include vp-1023 {
     grid-template-columns: 1fr;
@@ -107,6 +108,7 @@
 }
 
 .feedback__field {
+
   input,
   textarea {
     width: 100%;
@@ -172,10 +174,18 @@
   border: none;
   background-color: $color-black-pearl-form;
   color: $color-default-white;
+  margin-right: 13px;
+  font-size: 16px;
+
+  @include vp-1023 {
+    margin-right: 56px;
+  }
 
   @include vp-767 {
-    margin-bottom: 5px;
-    font-size: 16px;
+    // margin-bottom: 5px;
+    // font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 4px;
     letter-spacing: 0.05em;
   }
 }
@@ -186,11 +196,14 @@
   order: 1;
 
   @include vp-1023 {
-    margin-top: 8px;
+    // margin-top: 8px;
+    margin-top: 10px;
+    margin-left: -5px;
   }
 
   @include vp-767 {
     margin-top: 0;
+    margin-left: 0;
   }
 
   &:focus-within {
@@ -201,7 +214,7 @@
   }
 
   input:checked {
-    + span::after {
+    +span::after {
       content: "";
       position: absolute;
       top: 2px;
@@ -215,14 +228,14 @@
   }
 
   input:disabled {
-    ~ span {
+    ~span {
       opacity: 0.5;
       cursor: default;
     }
   }
 
   input:hover {
-    ~ span {
+    ~span {
       opacity: 1;
     }
   }
@@ -237,19 +250,24 @@
     bottom: -20px;
   }
 
-  input + span {
+  input+span {
     position: relative;
     display: block;
     width: 15px;
     height: 15px;
     flex-shrink: 0;
     box-sizing: border-box;
-    margin-left: 5px;
-    margin-right: 15px;
+    margin-left: 6px;
+    margin-right: 11px;
     background-color: $color-deep-sky-blue;
     border: 1px solid $color-default-white;
     border-radius: 2px;
     opacity: 1;
+
+    @include vp-1023 {
+      margin-left: 5px;
+      margin-right: 10px;
+    }
   }
 
   span {

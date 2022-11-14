@@ -6,10 +6,10 @@
   padding-top: 70px;
   padding-bottom: 140px;
 
-  @include vp-1439 {
-    padding-top: 70px;
-    padding-bottom: 140px;
-  }
+  // @include vp-1439 {
+  //   padding-top: 70px;
+  //   padding-bottom: 140px;
+  // }
 
   @include vp-1023 {
     padding-top: 60px;
@@ -113,6 +113,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: rgba(4, 24, 39, 0.5);
 
     &::before {
       content: "";
@@ -163,6 +164,7 @@
     font-size: 20px;
     line-height: 30px;
     color: $color-default-white;
+    width: 230px;
 
     @include vp-1023 {
       margin: 36px 0;
@@ -188,5 +190,29 @@
       right: 16px;
       bottom: 16px;
     }
+  }
+}
+
+.services__text-one {
+  display: none;
+  
+    @include vp-1023 {
+      display: none;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+}
+
+.services__text-two {
+  display: none;
+
+  @include vp-1023 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }

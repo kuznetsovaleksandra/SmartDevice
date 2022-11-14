@@ -27,10 +27,11 @@
   p {
     margin: 0 0 20px;
     min-height: 170px;
+    line-height: 21px;
 
     @include vp-1023 {
       min-height: auto;
-      margin-bottom: 13px;
+      margin-bottom: 23px;
     }
   }
 
@@ -48,6 +49,7 @@
     @include vp-767 {
       font-size: 28px;
       line-height: 35px;
+      margin-bottom: 14px;
     }
   }
 }

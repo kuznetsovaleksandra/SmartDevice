@@ -15,8 +15,7 @@
     "build": "cross-env NODE_ENV=production gulp build & gulp imagemin",
     "start": "cross-env NODE_ENV=development gulp start",
     "webp": "gulp webp",
-    "imagemin": "gulp imagemin",
-    "eslint": "eslint source/js/"
+    "imagemin": "gulp imagemin"
   },
   "editorconfig-cli": [
     "*.json",

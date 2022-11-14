@@ -20,7 +20,7 @@
 }
 
 .contacts__address {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-style: normal;
   color: transparentize($color-default-white, 0.3);
 
@@ -31,7 +31,7 @@
 
 .contacts__phone {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   color: transparentize($color-default-white, 0.3);
 
   &:hover {
